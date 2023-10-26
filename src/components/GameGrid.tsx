@@ -19,9 +19,10 @@ export interface Game {
 
 interface Props {
   selectedGenre: Genre|null;
+  selectedPlatform: Platform|null;
 }
-const GameGrid = ({ selectedGenre }: Props) => {
-  const { data: games, error, isLoading } = useGames(selectedGenre);
+const GameGrid = ({ selectedGenre, selectedPlatform }: Props) => {
+  const { data: games, error, isLoading } = useGames(selectedGenre, selectedPlatform);
   const skeletons = [...Array(12).keys()];
   return (
     <>
