@@ -15,7 +15,6 @@ const useData = <T>(
   const [data, setData] = useState<T[]>([]);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  console.log(requestConfig);
 
   useEffect(
     () => {
