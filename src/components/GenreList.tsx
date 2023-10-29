@@ -10,7 +10,6 @@ import {
 import useGenres, { Genre } from "../hooks/useGenres";
 import getCroppedImageUrl from "../services/image-url";
 import GenreItemSkeleton from "./GenreItemSkeleton";
-import { useState } from "react";
 
 interface Props {
   onSelectGenre: (genre: Genre) => void;
